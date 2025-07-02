@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="FastFood Express - Đặt món ăn nhanh ngon, giá rẻ, giao hàng tận nơi." />
+  <title> HKT - Thức Ăn Nhanh</title>
+  <link rel="stylesheet" href="tieuluanweb.css" />
+</head>
+<body>
+  <header>
+
+    <nav>
+  <ul>
+    <li><a href="#">🏠 Trang chủ</a></li>
+    <li><a href="#menu">🍔 Thực đơn</a></li>
+    <li><a href="#promotion">🎁 Khuyến mãi</a></li>
+    <li><a href="#about">📖 Về chúng tôi</a></li>
+    <li><a href="#contact">📞 Liên hệ</a></li>
+  </ul>
+</nav>
+    
+  </header>
+ <div class="banner">
+    <div class="overlay">
+      <h1>HKT-THỨC ĂN NHANH</h1>
+      <p>Hương vị đậm đà – Chất lượng tuyệt hảo</p>
+      <a href="#menu" class="btn">ĐẶT MÓN NGAY ➔</a>
+    </div>
+  </div>
+
+  <section class="about" id="about">
+  <h2>👨‍🍳 Về Chúng Tôi</h2>
+  <div class="about-content">
+    <img src="hinhanh/vct.jpg" alt="Hình ảnh về quán ăn" class="about-img">
+    <div class="about-text">
+      <p>
+        HKT - Thức Ăn Nhanh được thành lập với sứ mệnh mang đến những món ăn nhanh
+        ngon, an toàn và tiện lợi cho mọi người. Với đội ngũ đầu bếp nhiều kinh nghiệm,
+        chúng tôi cam kết phục vụ khách hàng bằng chất lượng tốt nhất, giá cả hợp lý,
+        và dịch vụ thân thiện.
+      </p>
+      <p>
+        Chúng tôi không ngừng sáng tạo để mang đến nhiều lựa chọn phong phú cho bạn mỗi ngày.
+        HKT tự hào là địa chỉ tin cậy cho bữa ăn nhanh của bạn và gia đình.
+      </p>
+    </div>
+  </div>
+  
+</section>
+
+<section class="promotion" id="promotion">
+  <h2>🎁 Chương Trình Khuyến Mãi</h2>
+  <div class="promotion-content">
+    <div class="promo-box">
+      <img src="hinhanh/sale4.jpg" alt="Giảm giá burger">
+      <h3>Burger Bò - Giảm 20%</h3>
+      <p>Chỉ còn 40.000đ trong tuần này!</p>
+    </div>
+    <div class="promo-box">
+      <img src="hinhanh/sale3.jpg" alt="Tặng nước uống">
+      <h3>Tặng nước miễn phí</h3>
+      <p>Khi mua combo Burger + Khoai Tây.</p>
+    </div>
+    <div class="promo-box">
+      <img src="hinhanh/sale5.jpg" alt="Miễn phí ship">
+      <h3>Miễn phí giao hàng</h3>
+      <p>Cho đơn từ 150.000đ trở lên.</p>
+    </div>
+  </div>
+</section>
+
+
+  
+  <!-- Thực đơn -->
+  <section class="menu" id="menu">
+    <h2>Thực đơn hôm nay</h2>
+    <div class="search-bar">
+  <input type="text" id="menu-search" placeholder="🔍 Tìm món ăn..." oninput="filterMenu()" />
+</div>
+    <div class="items">
+      <div class="item">
+        <img src="hinhanh/burger.jpg" alt="Burger Bò">
+        <h3>Burger Bò</h3>
+        <p>Giá: 50.000đ</p>
+        <button onclick="addToCart('Burger Bò', 50000)">Thêm vào giỏ</button>
+      </div>
+
+      <div class="item">
+        <img src="hinhanh/garan.jpg" alt="Gà Rán">
+        <h3>Gà Rán</h3>
+        <p>Giá: 45.000đ</p>
+        <button onclick="addToCart('Gà Rán', 45000)">Thêm vào giỏ</button>
+      </div>
+
+      <div class="item">
+        <img src="hinhanh/pizza.jpg" alt="Pizza Phô Mai">
+        <h3>Pizza Phô Mai</h3>
+        <p>Giá: 70.000đ</p>
+        <button onclick="addToCart('Pizza Phô Mai', 70000)">Thêm vào giỏ</button>
+      </div>
+
+      <div class="item">
+        <img src="hinhanh/mi y.jpg" alt="Mì Ý Sốt Bò">
+        <h3>Mì Ý Sốt Bò</h3>
+        <p>Giá: 60.000đ</p>
+        <button onclick="addToCart('Mì Ý Sốt Bò', 60000)">Thêm vào giỏ</button>
+      </div>
+
+      <div class="item">
+        <img src="hinhanh/nuoccam.jpg" alt="Nước Ép Cam">
+        <h3>Nước Ép Cam</h3>
+        <p>Giá: 25.000đ</p>
+        <button onclick="addToCart('Nước Ép Cam', 25000)">Thêm vào giỏ</button>
+      </div>
+
+      <div class="item">
+        <img src="hinhanh/khoaitay.jpg" alt="Khoai Tây Chiên">
+        <h3>Khoai Tây Chiên</h3>
+        <p>Giá: 30.000đ</p>
+        <button onclick="addToCart('Khoai Tây Chiên', 30000)">Thêm vào giỏ</button>
+      </div>
+
+      <div class="item">
+        <img src="hinhanh/coca.jpg" alt="Coca Cola">
+        <h3>Coca Cola</h3>
+        <p>Giá: 20.000đ</p>
+        <button onclick="addToCart('Coca Cola', 20000)">Thêm vào giỏ</button>
+      </div>
+    </div>
+  </section>
+
+  <div id="cart-toggle">🛒 Giỏ hàng (<span id="cart-count">0</span>)</div>
+
+<!-- Sidebar giỏ hàng -->
+<div id="cart-sidebar" class="cart-sidebar">
+  <div class="cart-header">
+    <h2>Giỏ hàng</h2>
+    <span id="cart-close">✖</span>
+  </div>
+  <ul id="cart-list"></ul>
+  <div class="cart-footer">
+    <p>Tổng tiền: <span id="cart-total">0đ</span></p>
+    <button onclick="checkout()">Đặt hàng</button>
+  </div>
+</div>
+
+<section class="testimonials" id="testimonials">
+  <h2>💬 Đánh Giá Từ Khách Hàng</h2>
+  <div class="testimonial-container">
+    <div class="testimonial">
+      <img src="hinhanh/kh2.jpg" alt="Khách hàng 1">
+      <h4>Nguyễn Thị Mai</h4>
+      <p>“Món ăn cực ngon, nóng hổi và giao hàng rất nhanh. Tôi đã đặt nhiều lần và luôn hài lòng!”</p>
+    </div>
+    <div class="testimonial">
+      <img src="hinhanh/kh1.jpg" alt="Khách hàng 2">
+      <h4>Trần Văn Nam</h4>
+      <p>“Burger rất chất lượng, nước ép cam tươi mát. Giá cả hợp lý, chắc chắn sẽ ủng hộ dài dài.”</p>
+    </div>
+    <div class="testimonial">
+      <img src="hinhanh/kh4.jpg" alt="Khách hàng 3">
+      <h4>Lê Hồng Phúc</h4>
+      <p>“Trang web dễ sử dụng, đặt hàng tiện lợi. Đội ngũ hỗ trợ thân thiện và chu đáo.”</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Liên hệ -->
+  <section class="contact" id="contact">
+    <h2>📞 Liên hệ</h2>
+    <p><strong>Địa chỉ:</strong> 123 Hồ Thị Kỷ, Phường 1, Quận 10, TP.HCM</p>
+    <p><strong>Điện thoại:</strong> 0123 456 789</p>
+    <p><strong>Email:</strong> fastfoodexpress@email.com</p>
+
+    <h3>🕐 Giờ mở cửa</h3>
+    <p>Thứ 2 - Chủ nhật: 9h00 - 22h00</p>
+
+    <h3>🌐 Mạng xã hội</h3>
+<p class="social-icons">
+  <a href="#"><img src="hinhanh/fb1.jpg.png" alt="Facebook" /> Facebook</a>
+  <a href="#"><img src="hinhanh/ins.jpg.png" alt="Instagram" /> Instagram</a>
+  
+</p>
+  </section>
+
+  <footer>
+    <p>© 2025 FastFood Express. All rights reserved.</p>
+  </footer>
+
+  <!-- Thông báo nhỏ -->
+  <div class="toast" id="toast">
+    <div class="toast-body"></div>
+  </div>
+
+  <script src="tieuluanweb.js"></script>
+</body>
+</html>
